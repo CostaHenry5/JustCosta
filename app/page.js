@@ -19,13 +19,13 @@ export default function Home() {
       <section style={{ marginTop:"80px", textAlign:"left" }}>
         <h3 style={{ textAlign:"center", marginBottom:"30px" }}>Core Services</h3>
         <ul style={{ listStyle:"none", padding:0, lineHeight:"2", fontSize:"18px" }}>
-          <li>📊 Data Science & Data Analytics</li>
-          <li>🤖 AI & Automation Workflow Optimization</li>
-          <li>🚀 Digital Marketing & Brand Strategy</li>
-          <li>🎨 Branding & Logo Design</li>
-          <li>✍️ Professional Writing & Proofreading</li>
-          <li>🌍 English–Swahili Translation & Interpretation</li>
-          <li>💼 Customer Service & Tech Support</li>
+          <li>✅Data Science & Data Analytics</li>
+          <li>✅ AI & Automation Workflow Optimization</li>
+          <li>✅ Digital Marketing & Brand Strategy</li>
+          <li>✅ Branding & Logo Design</li>
+          <li>✅ Professional Writing & Proofreading</li>
+          <li>✅ English–Swahili Translation & Interpretation</li>
+          <li>✅ Customer Service & Tech Support</li>
         </ul>
       </section>
 
