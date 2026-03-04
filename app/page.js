@@ -1,77 +1,130 @@
 export default function Home() {
   return (
-    <main style={{ padding:"80px 20px", maxWidth:"1000px", margin:"0 auto", fontFamily:"Arial" }}>
+    <main style={{padding:"20px",maxWidth:"900px",margin:"auto",fontFamily:"Arial"}}>
 
-      {/* HERO SECTION */}
-      <section style={{ textAlign:"center", marginBottom:"80px" }}>
-        <h1 style={{ fontSize:"60px" }}>Just Costa</h1>
-        <h2 style={{ color:"#666" }}>Data. Digital. Growth.</h2>
+      {/* HERO */}
+      <section style={{textAlign:"center",marginBottom:"50px"}}>
+        <h1 style={{fontSize:"42px"}}>Just Costa</h1>
+        <h3 style={{color:"#666"}}>Data • Digital • Growth</h3>
 
-        <p style={{ fontSize:"18px", marginTop:"20px" }}>
-          Helping businesses grow with data analytics, digital marketing,
-          branding, and AI-powered solutions.
+        <p>
+          Helping businesses grow using data analytics,
+          digital marketing, branding and AI tools.
         </p>
+
+        <img
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+          style={{width:"100%",borderRadius:"10px",marginTop:"20px"}}
+        />
+
+        <br/><br/>
 
         <a
           href="mailto:constantinehenry39@gmail.com"
           style={{
-            padding:"12px 30px",
-            background:"black",
-            color:"white",
-            textDecoration:"none",
+            background:"#000",
+            color:"#fff",
+            padding:"12px 25px",
             borderRadius:"6px",
-            display:"inline-block",
-            marginTop:"20px"
+            textDecoration:"none"
           }}
         >
           Work With Me
         </a>
       </section>
 
+
       {/* SERVICES */}
-      <section style={{ marginBottom:"80px" }}>
+      <section style={{marginBottom:"50px"}}>
         <h2>Services</h2>
 
-        <p>📊 <b>Data Analytics</b> – Turning raw data into insights using Excel and analytics tools.</p>
+        <div style={{display:"grid",gap:"15px"}}>
 
-        <p>🚀 <b>Digital Marketing</b> – Growth strategies and marketing solutions for businesses.</p>
+          <div style={{border:"1px solid #ddd",padding:"15px",borderRadius:"8px"}}>
+            📊 <b>Data Analytics</b>
+            <p>Excel dashboards and data insights.</p>
+          </div>
 
-        <p>🎨 <b>Branding & Logo Design</b> – Creating visual identities for modern brands.</p>
+          <div style={{border:"1px solid #ddd",padding:"15px",borderRadius:"8px"}}>
+            🚀 <b>Digital Marketing</b>
+            <p>Strategies for business growth.</p>
+          </div>
 
-        <p>✍️ <b>Content Writing & Proofreading</b> – Professional business and web writing.</p>
+          <div style={{border:"1px solid #ddd",padding:"15px",borderRadius:"8px"}}>
+            🎨 <b>Branding & Logo Design</b>
+            <p>Professional visual identities.</p>
+          </div>
 
-        <p>🌍 <b>Translation</b> – English ↔ Swahili translation services.</p>
+          <div style={{border:"1px solid #ddd",padding:"15px",borderRadius:"8px"}}>
+            ✍️ <b>Content Writing</b>
+            <p>Professional writing and proofreading.</p>
+          </div>
+
+        </div>
       </section>
 
+
+      {/* PORTFOLIO */}
+      <section style={{marginBottom:"50px"}}>
+        <h2>My Work</h2>
+
+        <div style={{
+          display:"flex",
+          gap:"20px",
+          overflowX:"scroll"
+        }}>
+
+          <div style={{minWidth:"220px"}}>
+            <img
+              src="https://images.unsplash.com/photo-1556155092-490a1ba16284"
+              style={{width:"100%",borderRadius:"8px"}}
+            />
+            <p>Data Dashboard Project</p>
+          </div>
+
+          <div style={{minWidth:"220px"}}>
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+              style={{width:"100%",borderRadius:"8px"}}
+            />
+            <p>Marketing Analytics</p>
+          </div>
+
+          <div style={{minWidth:"220px"}}>
+            <img
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+              style={{width:"100%",borderRadius:"8px"}}
+            />
+            <p>Brand Design</p>
+          </div>
+
+          <div style={{minWidth:"220px"}}>
+            <img
+              src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0"
+              style={{width:"100%",borderRadius:"8px"}}
+            />
+            <p>AI Automation Tools</p>
+          </div>
+
+        </div>
+      </section>
+
+
       {/* ABOUT */}
-      <section style={{ marginBottom:"80px" }}>
+      <section style={{marginBottom:"50px"}}>
         <h2>About Me</h2>
 
         <p>
-          I’m <b>Costa</b>, a multidisciplinary professional with
-          experience in healthcare, data analytics, digital marketing,
-          branding, and AI tools.
+          I'm <b>Costantino Henry</b>, a multidisciplinary professional
+          combining healthcare knowledge with data analytics,
+          digital marketing and AI tools to help businesses grow.
         </p>
 
-        <p>
-          My goal is to help businesses make smarter decisions,
-          improve efficiency, and grow using modern digital strategies.
-        </p>
       </section>
 
-      {/* PROJECTS */}
-      <section style={{ marginBottom:"80px" }}>
-        <h2>Projects</h2>
-
-        <p>📊 Healthcare Data Analysis dashboards.</p>
-
-        <p>📈 Digital marketing strategies for business growth.</p>
-
-        <p>🎨 Branding and logo design for small businesses.</p>
-      </section>
 
       {/* CONTACT */}
-      <section style={{ textAlign:"center", marginBottom:"80px" }}>
+      <section style={{textAlign:"center"}}>
         <h2>Contact</h2>
 
         <p>Email: constantinehenry39@gmail.com</p>
@@ -82,13 +135,12 @@ export default function Home() {
           </a>
         </p>
 
-        <p>Location: Dar es Salaam, Tanzania</p>
+        <p>Dar es Salaam, Tanzania</p>
 
-        <p>Available for remote freelance projects worldwide.</p>
       </section>
 
-      {/* FOOTER */}
-      <footer style={{ textAlign:"center", color:"#777" }}>
+
+      <footer style={{textAlign:"center",marginTop:"40px",color:"#888"}}>
         © 2026 Just Costa
       </footer>
 
